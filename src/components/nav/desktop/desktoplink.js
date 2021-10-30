@@ -7,7 +7,7 @@ export default class DesktopItem extends Component {
   }
   render() {
     return (
-      <div className="flex-1 text-center">
+      <div className="inline-block mx-8 pt-2">
         <Link to={this.props.pagelink} >
         {this.props.pagetitle}
         </Link>

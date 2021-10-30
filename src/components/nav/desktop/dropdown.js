@@ -1,9 +1,5 @@
 import { Component } from "react";
-import {
-    BrowserRouter as Router,
-    Link
-  } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 export default class DropDown extends Component {
   constructor(props) {
@@ -31,7 +27,7 @@ export default class DropDown extends Component {
 
   render() {
     if (this.state.isopen === true) {
-      var stylehyde = "flow-root bg-white text-center ";
+      var stylehyde = "flow-root bg-white  ";
     } else {
       var stylehyde = "hidden";
     }
@@ -41,9 +37,8 @@ export default class DropDown extends Component {
         onKeyPress={this.handleKeyPress}
         tabIndex="0"
         onBlur={this.handleblur}
-        className="flex-1 text-center"
       >
-        <Link to={this.props.pagelink} >
+        <Link to={this.props.pagelink}>
           <h2>{this.props.pagetitle}</h2>
         </Link>
         <svg
@@ -62,7 +57,7 @@ export default class DropDown extends Component {
         <div className={stylehyde}>
           {this.props.globaldata.subpages.map((dropdowns, index) => {
             return (
-              <Link to={dropdowns.link} key={index} >
+              <Link to={dropdowns.link} key={index}>
                 <h3 className="hover:bg-gray-100">{dropdowns.name}</h3>
               </Link>
             );

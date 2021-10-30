@@ -32,16 +32,16 @@ export default function Nav() {
     return (
       <Router>
         <DesktopNav navstate={navstate} />
-<Switch>
-        <Route path="/web-design">
-          <WebDesign />
-        </Route>
-        <Route path="/graphic-design">
-          <GraphicDesign />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
+        <Switch>
+          <Route path="/web-design">
+            <WebDesign />
+          </Route>
+          <Route path="/graphic-design">
+            <GraphicDesign />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
         </Switch>
       </Router>
     );

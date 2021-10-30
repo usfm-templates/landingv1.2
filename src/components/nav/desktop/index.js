@@ -1,8 +1,8 @@
 import { Component } from "react";
 import DropDown from "./dropdown";
 import DesktopItem from "./desktoplink";
+import Logo from "../logo";
 
-import { BrowserRouter as Router } from "react-router-dom";
 
 export default class DesktopNav extends Component {
   constructor(props) {
@@ -11,7 +11,9 @@ export default class DesktopNav extends Component {
 
   render() {
     return (
-      <div className="w-full h-12 sticky bg-blue-200 flex">
+      <div className="w-full h-12 sticky bg-blue-200 grid grid-cols-3">
+          <Logo/>
+          <div className="text-center">
         {this.props.navstate.pages.map((pagelink, index) => {
           if (pagelink.subpages) {
             return (
@@ -27,6 +29,8 @@ export default class DesktopNav extends Component {
             );
           }
         })}
+        </div>
+        <div className="text-right p-2">Socials</div>
       </div>
     );
   }
