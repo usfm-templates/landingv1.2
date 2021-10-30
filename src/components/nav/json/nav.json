@@ -1,0 +1,53 @@
+{
+    "pages": [
+      {
+        "name": "Home",
+        "link": "/"
+      },
+      {
+        "name": "Web Design",
+        "link": "/web-design",
+        "subpages": [
+          {
+            "name": "Landing Pages",
+            "link": "/web-design/landing-pages"
+          },
+          {
+            "name": "Wordpress",
+            "link": "/web-design/wordpress"
+          },
+          {
+            "name": "Shopify",
+            "link": "/web-design/shopify"
+          },
+          {
+            "name": "Custom Ecommerce",
+            "link": "/web-design/ecommerce"
+          },
+          {
+            "name": "React & NextJS",
+            "link": "/web-design/react-next"
+          }
+        ]
+      },
+  
+      {
+        "name": "Graphic Design",
+        "link": "/graphic-design",
+        "subpages": [
+          {
+            "name": "Adobe Suite",
+            "link": "/graphic-design/adobe"
+          },
+          {
+            "name": "Wordpress",
+            "link": "/graphic-design/logos"
+          },
+          {
+            "name": "Landing Pages",
+            "link": "/graphic-design/video-editing"
+          }
+        ]
+      }
+    ]
+  }
